@@ -109,7 +109,7 @@ export const animateText = (meshTextQream, meshTextWorld) => {
 
 export const animateFadeIn = (ambientLight, spotLight) => {
     new TWEEN.Tween({ val: 0 })
-        .to({ val: 0.5 }, 4000)
+        .to({ val: 0.9 }, 4000)
         .easing(TWEEN.Easing.Quadratic.InOut)
         .onUpdate(obj => {
             ambientLight.intensity = obj.val;
