@@ -35,7 +35,9 @@ let scene,
 const gui = new dat.GUI();
 
 const createScene = () => {
-    renderer = new WebGLRenderer();
+    renderer = new WebGLRenderer({
+        antialias: true
+    });
     scene = new Scene();
     stats = new Stats();
     camera = new PerspectiveCamera(75, screenWidth / screenHeight, 0.1, 10000);
